@@ -24,6 +24,7 @@ public class Queue extends Thread implements Comparable{
         }
     }
 
+
     public Client peek(){
         if(clientsQueue.size()>0){
             return clientsQueue.get(clientsQueue.size()-1);
