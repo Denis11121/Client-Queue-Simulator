@@ -1,0 +1,7 @@
+numberOfClients=4
+numberOfQueues=2
+maxSimulationTime=60
+minArrivalTime=2
+maxArrivalTime=30
+minServiceTime=2
+maxServiceTime=4
