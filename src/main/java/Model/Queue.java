@@ -10,6 +10,7 @@ public class Queue extends Thread implements Comparable{
     public ArrayList<Client> getClientsQueue(){
         return clientsQueue;
     }
+
     public synchronized void addClient(Client client){
         clientsQueue.add(0,client);
     }
