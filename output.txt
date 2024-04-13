@@ -6,245 +6,233 @@ MAX Arrival Time : 30
 MIN Service Time : 2
 MAX Service Time : 4
 Clients:
-Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
+Client: id=1, arrivalTime=8, serviceTime=2, waitingTime=0
 
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
+Client: id=2, arrivalTime=9, serviceTime=4, waitingTime=0
 
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
+Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
 
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 
 
 Time: 1
-Waiting clients: Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=1, arrivalTime=8, serviceTime=2, waitingTime=0
+Client: id=2, arrivalTime=9, serviceTime=4, waitingTime=0
+Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 2
-Waiting clients: Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=1, arrivalTime=8, serviceTime=2, waitingTime=0
+Client: id=2, arrivalTime=9, serviceTime=4, waitingTime=0
+Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 3
-Waiting clients: Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=1, arrivalTime=8, serviceTime=2, waitingTime=0
+Client: id=2, arrivalTime=9, serviceTime=4, waitingTime=0
+Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 4
-Waiting clients: Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=1, arrivalTime=8, serviceTime=2, waitingTime=0
+Client: id=2, arrivalTime=9, serviceTime=4, waitingTime=0
+Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 5
-Waiting clients: Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=1, arrivalTime=8, serviceTime=2, waitingTime=0
+Client: id=2, arrivalTime=9, serviceTime=4, waitingTime=0
+Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 6
-Waiting clients: Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=1, arrivalTime=8, serviceTime=2, waitingTime=0
+Client: id=2, arrivalTime=9, serviceTime=4, waitingTime=0
+Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 7
-Waiting clients: Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=1, arrivalTime=8, serviceTime=2, waitingTime=0
+Client: id=2, arrivalTime=9, serviceTime=4, waitingTime=0
+Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 8
-Waiting clients: Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=1, arrivalTime=8, serviceTime=2, waitingTime=0
+Client: id=2, arrivalTime=9, serviceTime=4, waitingTime=0
+Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 9
-Waiting clients: Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=2, arrivalTime=9, serviceTime=4, waitingTime=0
+Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
-Queue1: Closed
+Queue1: Client: id=1, arrivalTime=8, serviceTime=1, waitingTime=1
+
 Queue2: Closed
 --------------------------------
 
 Time: 10
-Waiting clients: Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
-Queue2: Closed
+Queue2: Client: id=2, arrivalTime=9, serviceTime=3, waitingTime=1
+
 --------------------------------
 
 Time: 11
-Waiting clients: Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
-Queue2: Closed
+Queue2: Client: id=2, arrivalTime=9, serviceTime=2, waitingTime=2
+
 --------------------------------
 
 Time: 12
-Waiting clients: Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
-Queue2: Closed
+Queue2: Client: id=2, arrivalTime=9, serviceTime=1, waitingTime=3
+
 --------------------------------
 
 Time: 13
-Waiting clients: Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 14
-Waiting clients: Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 15
-Waiting clients: Client: id=1, arrivalTime=15, serviceTime=2, waitingTime=0
-Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 16
-Waiting clients: Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
-Queue1: Client: id=1, arrivalTime=15, serviceTime=1, waitingTime=1
-
+Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 17
-Waiting clients: Client: id=2, arrivalTime=17, serviceTime=3, waitingTime=0
-Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 18
-Waiting clients: Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
-Queue1: Client: id=2, arrivalTime=17, serviceTime=2, waitingTime=1
-
+Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 19
-Waiting clients: Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
-Queue1: Client: id=2, arrivalTime=17, serviceTime=1, waitingTime=2
-
+Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 20
-Waiting clients: Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 21
-Waiting clients: Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 22
-Waiting clients: Client: id=3, arrivalTime=22, serviceTime=2, waitingTime=0
-Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 23
-Waiting clients: Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
-Queue1: Client: id=3, arrivalTime=22, serviceTime=1, waitingTime=1
-
+Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 24
-Waiting clients: Client: id=4, arrivalTime=24, serviceTime=2, waitingTime=0
+Waiting clients: Client: id=3, arrivalTime=24, serviceTime=2, waitingTime=0
+Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
 
 Queue1: Closed
 Queue2: Closed
 --------------------------------
 
 Time: 25
-Waiting clients: 
-Queue1: Client: id=4, arrivalTime=24, serviceTime=1, waitingTime=1
+Waiting clients: Client: id=4, arrivalTime=25, serviceTime=4, waitingTime=0
+
+Queue1: Client: id=3, arrivalTime=24, serviceTime=1, waitingTime=1
 
 Queue2: Closed
 --------------------------------
@@ -252,19 +240,22 @@ Queue2: Closed
 Time: 26
 Waiting clients: 
 Queue1: Closed
-Queue2: Closed
+Queue2: Client: id=4, arrivalTime=25, serviceTime=3, waitingTime=1
+
 --------------------------------
 
 Time: 27
 Waiting clients: 
 Queue1: Closed
-Queue2: Closed
+Queue2: Client: id=4, arrivalTime=25, serviceTime=2, waitingTime=2
+
 --------------------------------
 
 Time: 28
 Waiting clients: 
 Queue1: Closed
-Queue2: Closed
+Queue2: Client: id=4, arrivalTime=25, serviceTime=1, waitingTime=3
+
 --------------------------------
 
 Time: 29
@@ -465,4 +456,4 @@ Queue1: Closed
 Queue2: Closed
 --------------------------------
 
-Average waiting time: 1.25
+Average waiting time: 2.0
