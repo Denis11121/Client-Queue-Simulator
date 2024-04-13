@@ -32,7 +32,7 @@ public class Simulation {
         this.minServiceTime = minServiceTime;
         this.maxServiceTime = maxServiceTime;
         this.time=0;
-        //generare clienti
+
         clients=new ArrayList<Client>(numberOfClients);
         Random randomGenerator=new Random();
         int arrivalTime=-1;
@@ -56,7 +56,24 @@ public class Simulation {
         return maxServiceTime;
     }
 
-    private Queue bestQueue(ArrayList<Queue> queues){
+    private Queue shortestTime(ArrayList<Queue> queues){
+        if(queues.size() == 0){
+            System.out.println("No queues");
+            return null;
+        }
+        Queue shortestTimeQueue = queues.get(0);
+        int shortestTime = shortestTimeQueue.computeServiceTime();
+
+        for(Queue queue: queues){
+            int queueServiceTime = queue.computeServiceTime();
+            if(queueServiceTime < shortestTime){
+                shortestTime = queueServiceTime;
+                shortestTimeQueue = queue;
+            }
+        }
+        return shortestTimeQueue;
+    }
+    private Queue shortestQueue(ArrayList<Queue> queues){
         if(queues.size()==0){
             System.out.println("No queues");
             return null;
@@ -82,28 +99,41 @@ public class Simulation {
             System.out.println("Simulation over");
             return;
         }
+
         for(Client client: clients){
-            if(client.getArrivalTime()==time){
-                Queue bestQueue=bestQueue(queues);
+            if(client.getArrivalTime() == time){
+                Queue bestQueue;
+                Queue shortestTimeQueue = shortestTime(queues);
+                Queue shortestQueue = shortestQueue(queues);
+
+                if(shortestTimeQueue.computeServiceTime() == shortestQueue.computeServiceTime()){
+                  bestQueue = shortestQueue;
+                } else {
+                    bestQueue = shortestTimeQueue;
+                }
+
                 bestQueue.addClient(client);
                 currentClientsInQueues.add(client);
             }
         }
-        ArrayList<Thread> threads=new ArrayList<Thread>();
+
+        ArrayList<Thread> threads = new ArrayList<Thread>();
         for(Queue queue:queues){
-            if(queue.getClientsQueue().size()>0){
-                Thread thread=new Thread(queue);
+            if(queue.getClientsQueue().size() > 0){
+                Thread thread = new Thread(queue);
                 threads.add(thread);
                 thread.start();
             }
         }
+
         for(Thread thread:threads){
             try{
                 thread.join();
-            }catch(InterruptedException e){
+            } catch(InterruptedException e){
                 e.printStackTrace();
             }
         }
+
         time++;
     }
     public String simulationStep(){
