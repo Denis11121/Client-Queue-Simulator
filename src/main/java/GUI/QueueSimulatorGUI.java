@@ -13,6 +13,7 @@ public class QueueSimulatorGUI extends JFrame implements ActionListener {
     private JTextField clientsTextField, queuesTextField, maxSimulationTimeTextField, minArrivalTimeTextField, maxArrivalTimeTextField, minServiceTimeTextField, maxServiceTimeTextField;
     private JButton startButton;
     private JTextArea simulationResultTextArea;
+    private JPanel progressBarsPanel; // Panel to hold progress bars for each queue
 
     private Simulation simulation;
     private String outputFileName;
@@ -22,15 +23,13 @@ public class QueueSimulatorGUI extends JFrame implements ActionListener {
     private Timer simulationTimer;
     private int currentTimeStep;
 
-
-
     public QueueSimulatorGUI() {
         setTitle("Queue Simulator");
-        setSize(600, 400);
+        setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JPanel inputPanel = new JPanel();
-        inputPanel.setLayout(new GridLayout(8, 2));
+        inputPanel.setLayout(new GridLayout(9, 2));
 
         clientsTextField = new JTextField();
         queuesTextField = new JTextField();
@@ -67,9 +66,13 @@ public class QueueSimulatorGUI extends JFrame implements ActionListener {
         JScrollPane scrollPane = new JScrollPane(simulationResultTextArea);
         resultPanel.add(scrollPane, BorderLayout.CENTER);
 
+        progressBarsPanel = new JPanel();
+        progressBarsPanel.setLayout(new GridLayout(0, 1));
+
         getContentPane().setLayout(new BorderLayout());
         getContentPane().add(inputPanel, BorderLayout.NORTH);
         getContentPane().add(resultPanel, BorderLayout.CENTER);
+        getContentPane().add(progressBarsPanel, BorderLayout.EAST);
 
         setVisible(true);
 
@@ -97,6 +100,18 @@ public class QueueSimulatorGUI extends JFrame implements ActionListener {
         simulation = new Simulation(noOfClients, noOfQueues, maxSimulationTime, minArrivalTime, maxArrivalTime, minServiceTime, maxServiceTime);
         outputFileName = "simulation_output.txt";
         simulationSteps = new StringBuilder();
+
+        progressBarsPanel.removeAll();
+
+        for (int i = 0; i < noOfQueues; i++) {
+            JProgressBar queueProgressBar = new JProgressBar(0, simulation.getMaxServiceTime());
+            queueProgressBar.setStringPainted(true);
+            progressBarsPanel.add(new JLabel("Queue " + (i + 1)));
+            progressBarsPanel.add(queueProgressBar);
+        }
+
+        validate();
+
         simulationTimer.scheduleAtFixedRate(new TimerTask() {
             @Override
             public void run() {
@@ -106,6 +121,12 @@ public class QueueSimulatorGUI extends JFrame implements ActionListener {
                     simulationSteps.append("\n--------------------------------\n");
 
                     SwingUtilities.invokeLater(() -> simulationResultTextArea.setText(simulationSteps.toString()));
+
+                    for (int i = 0; i < noOfQueues; i++) {
+                        JProgressBar queueProgressBar = (JProgressBar) progressBarsPanel.getComponent(i * 2 + 1);
+                        queueProgressBar.setValue(simulation.getQueueProgress(i));
+                    }
+
                     currentTimeStep++;
                 } else {
                     double averageWaitingTime = simulation.computeAverageWaitingTime();
@@ -123,13 +144,9 @@ public class QueueSimulatorGUI extends JFrame implements ActionListener {
         }, 0, 1000);
     }
 
-
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                new QueueSimulatorGUI();
-            }
-        });
+        SwingUtilities.invokeLater(QueueSimulatorGUI::new);
     }
 }
+
+
