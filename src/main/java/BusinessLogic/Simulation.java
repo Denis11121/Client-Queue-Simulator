@@ -52,7 +52,9 @@ public class Simulation {
         }
     }
 
-
+    public int getMaxServiceTime() {
+        return maxServiceTime;
+    }
 
     private Queue bestQueue(ArrayList<Queue> queues){
         if(queues.size()==0){
@@ -139,6 +141,10 @@ public class Simulation {
         }
         result/=clients.size();
         return result;
+    }
+
+    public int getQueueProgress(int queueIndex) {
+        return queues.get(queueIndex).computeServiceTime();
     }
 
     public void run(String outputFileName){
