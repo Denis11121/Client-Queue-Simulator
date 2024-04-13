@@ -148,3 +148,4 @@ public class QueueSimulatorGUI extends JFrame implements ActionListener {
         SwingUtilities.invokeLater(QueueSimulatorGUI::new);
     }
 }
+
