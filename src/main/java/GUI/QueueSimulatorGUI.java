@@ -13,7 +13,7 @@ public class QueueSimulatorGUI extends JFrame implements ActionListener {
     private JTextField clientsTextField, queuesTextField, maxSimulationTimeTextField, minArrivalTimeTextField, maxArrivalTimeTextField, minServiceTimeTextField, maxServiceTimeTextField;
     private JButton startButton;
     private JTextArea simulationResultTextArea;
-    private JPanel progressBarsPanel; // Panel to hold progress bars for each queue
+    private JPanel progressBarsPanel;
 
     private Simulation simulation;
     private String outputFileName;
